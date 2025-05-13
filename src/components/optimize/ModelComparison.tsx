@@ -1,6 +1,6 @@
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { BarChart } from "@/components/ui/chart";
+import { BarChart } from "@/components/ui/bar-chart";
 
 interface ModelComparisonProps {
   originalSize?: number;
