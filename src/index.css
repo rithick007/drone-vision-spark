@@ -1,38 +1,39 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
   :root {
-    --background: 220 45% 10%;
-    --foreground: 0 0% 98%;
+    --background: 195 100% 98%;
+    --foreground: 222 47% 11%;
 
-    --card: 220 45% 12%;
-    --card-foreground: 0 0% 98%;
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
 
-    --popover: 220 45% 12%;
-    --popover-foreground: 0 0% 98%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
 
-    --primary: 214 95% 60%;
-    --primary-foreground: 0 0% 98%;
+    --primary: 196 100% 47%;
+    --primary-foreground: 210 40% 98%;
 
-    --secondary: 215 40% 25%;
-    --secondary-foreground: 0 0% 98%;
+    --secondary: 163 94% 40%;
+    --secondary-foreground: 222 47% 11%;
 
-    --muted: 215 35% 20%;
-    --muted-foreground: 215 16% 65%;
+    --muted: 210 40% 96%;
+    --muted-foreground: 215 16% 47%;
 
-    --accent: 214 95% 60%;
-    --accent-foreground: 0 0% 98%;
+    --accent: 210 40% 96%;
+    --accent-foreground: 222 47% 11%;
 
     --destructive: 0 84% 60%;
-    --destructive-foreground: 0 0% 98%;
+    --destructive-foreground: 210 40% 98%;
 
-    --border: 215 40% 18%;
-    --input: 215 40% 18%;
-    --ring: 214 95% 60%;
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 222 84% 5%;
 
-    --radius: 0.5rem;
+    --radius: 1rem;
   }
 
   * {
@@ -50,7 +51,7 @@
   }
   
   .gradient-bg {
-    @apply bg-gradient-to-br from-background to-background/80;
+    @apply bg-gradient-to-br from-primary/10 to-secondary/10;
   }
 
   .card-hover {
@@ -58,15 +59,7 @@
   }
   
   .blur-backdrop {
-    @apply bg-white/10 backdrop-blur-md;
-  }
-
-  .btn-primary {
-    @apply bg-primary text-white px-6 py-3 rounded-full font-medium hover:bg-primary/90 transition-colors;
-  }
-  
-  .btn-secondary {
-    @apply bg-secondary text-white px-6 py-3 rounded-full font-medium hover:bg-secondary/90 transition-colors;
+    @apply bg-white/70 backdrop-blur-md;
   }
 }
 
@@ -172,40 +165,4 @@
   height: 45px;
   animation: float-cloud 65s linear infinite;
   animation-delay: -35s;
-}
-
-/* Network lines animation */
-@keyframes pulse-line {
-  0%, 100% {
-    opacity: 0.3;
-  }
-  50% {
-    opacity: 0.8;
-  }
-}
-
-.network-line {
-  stroke: #1e90ff;
-  stroke-width: 1;
-  stroke-dasharray: 5;
-  animation: pulse-line 3s infinite;
-}
-
-.network-node {
-  fill: #1e90ff;
-  r: 4;
-  animation: pulse-soft 2s infinite;
-}
-
-/* Trusted by section */
-.partners-section {
-  @apply py-16 border-t border-gray-800;
-}
-
-.partners-container {
-  @apply container mx-auto flex flex-wrap justify-center items-center gap-8 md:gap-12;
-}
-
-.partner-logo {
-  @apply h-8 md:h-10 opacity-70 hover:opacity-100 transition-opacity grayscale hover:grayscale-0;
 }
