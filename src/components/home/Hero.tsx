@@ -52,7 +52,7 @@ const Hero = () => {
   );
 };
 
-// Moving clouds component
+// Moving clouds component with more cloud elements
 const MovingClouds = () => {
   return (
     <div className="absolute inset-0">
@@ -61,6 +61,11 @@ const MovingClouds = () => {
       <div className="cloud cloud-3 opacity-80"></div>
       <div className="cloud cloud-4 opacity-50"></div>
       <div className="cloud cloud-5 opacity-70"></div>
+      {/* Additional clouds */}
+      <div className="cloud cloud-6 opacity-65"></div>
+      <div className="cloud cloud-7 opacity-55"></div>
+      <div className="cloud cloud-8 opacity-75"></div>
+      <div className="cloud cloud-9 opacity-40"></div>
     </div>
   );
 };
