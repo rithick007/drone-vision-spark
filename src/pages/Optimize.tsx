@@ -61,7 +61,7 @@ const Optimize = () => {
         toast({
           title: "Optimization Complete",
           description: "Your model has been successfully optimized!",
-          variant: "success",
+          variant: "default", // Changed from "success" to "default"
         });
       }
     }, 500);
